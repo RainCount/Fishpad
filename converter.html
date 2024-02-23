@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mp3 Converter</title>
+</head>
+<body>
+    <input type="file" id="fileInput">
+
+    <script>
+        var fileInput = document.querySelector('#fileInput');
+
+        fileInput.onchange = function () {
+            var file = this.files[0];
+            var reader = new FileReader();
+            reader.readAsDataURL(file);
+            reader.onload = function () {
+                console.log(reader.result);
+            };
+        };
+    </script>
+    <!-- 此代码可以实现input按钮加载本地文件,并在console直接输出base64编码 -->
+    <!-- 来源于http://www.imooc.com/wenda/detail/458679 -->
+</body>
+</html>
