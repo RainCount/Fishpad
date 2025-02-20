@@ -6,4 +6,4 @@
 
 # DEMO
 
-http://fishpad.whisperain.me/
+http://fishpad.whisperain.tech/
